@@ -1,0 +1,149 @@
+<template>
+  <mdb-container fluid>
+    <!--Section: Heading-->
+    <section class="mb-4">
+      <div class="card">
+        <div class="card-body d-flex justify-content-between">
+          <h4 class="h4-responsive mt-3">Invoice #124190</h4>
+
+          <div>
+            <mdbBtn tag="a" color="secondary" href="#">Pay now</mdbBtn>
+            <mdbBtn tag="a" color="primary" icon="print" iconLeft href="#"
+              >Print</mdbBtn
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Heading-->
+
+    <!--Section: Invoice details-->
+    <section class="mb-4">
+      <div class="card">
+        <div class="card-body">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6 text-left">
+              <p><small>From:</small></p>
+              <p><strong>Awesome Company Inc</strong></p>
+              <p>134 Richardson Ave</p>
+              <p>San Francisco, CA 94123</p>
+              <p><strong>Invoice date:</strong> November 18, 2016</p>
+              <p><strong>Due date:</strong> December 2, 2016</p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 text-right">
+              <h4 class="h4-responsive">
+                <small>Invoice No.</small><br /><strong
+                  ><span class="blue-text">#124190</span></strong
+                >
+              </h4>
+
+              <p><small>To:</small></p>
+              <p><strong>The Company, Inc</strong></p>
+              <p>1-245 East Russel Road</p>
+              <p>Munger, MI 48747</p>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+      </div>
+    </section>
+    <!--Section: Invoice details-->
+
+    <!--Section: Invoice table-->
+    <section>
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <!-- Item list -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Item list</th>
+                  <th>Quantity</th>
+                  <th>Unit Price</th>
+                  <th>Tax</th>
+                  <th>Total price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MDBootstrap Corporate License</td>
+                  <td>1</td>
+                  <td>$319</td>
+                  <td>$73.37</td>
+                  <td>$319</td>
+                </tr>
+                <tr>
+                  <td>Material Design for Wordpress</td>
+                  <td>2</td>
+                  <td>$69</td>
+                  <td>$31.74</td>
+                  <td>$138</td>
+                </tr>
+                <tr>
+                  <td>MDBootstrap Portfolio Template Personal Licence</td>
+                  <td>1</td>
+                  <td>$49</td>
+                  <td>$11.27</td>
+                  <td>$49</td>
+                </tr>
+                <tr>
+                  <td>MDBootstrap Magazine Corporate Licence</td>
+                  <td>1</td>
+                  <td>$249</td>
+                  <td>$57.27</td>
+                  <td>$249</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- /.Item list -->
+          </div>
+
+          <ul class="list-unstyled text-right">
+            <li>
+              <strong>Sub Total:</strong
+              ><span class="float-right ml-3">$755</span>
+            </li>
+            <li>
+              <strong>TAX:</strong><span class="float-right ml-3">$173,65</span>
+            </li>
+            <li>
+              <strong>TOTAL:</strong><span class="float-right ml-3">$755</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--Section: Invoice table-->
+  </mdb-container>
+</template>
+
+<script>
+import {
+  mdbContainer,
+  mdbBtn,
+} from "mdbvue";
+
+// eslint-disable-next-line
+Chart.defaults.global.defaultFontColor = "#fff";
+
+export default {
+  name: "Invoice",
+  components: {
+    mdbContainer,
+    mdbBtn,
+  },
+  data() {
+    return {};
+  }
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped></style>
